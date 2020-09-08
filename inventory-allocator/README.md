@@ -3,9 +3,13 @@
 To run the solution testcases:
 - git clone the repo to your local machine
 - in your terminal, cd into the folder with the local repo
-- cd into the src folder and enter the command ` python test.py`
+- cd into the `/inventory-allocator/src` folder
+- enter the command ` python test.py`
 - this runs the python test runner, and you should see a successful output of
 `Ran 9 tests in 0.001s`
+- to run your own test cases, follow the template format of any test case in test.py
+- - update the test case number for the test case, shipment_order, and expected_output
+- - update input and expected_output accordingly
 
 ---------------------------------------------------
 
