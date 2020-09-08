@@ -50,7 +50,7 @@ def optimal_shipping(shipment_order, warehouses):
 
       
 warehouses = [{
-        "name": "FreshCo",
+        "name": "owd",
         "inventory": {
             "apple": 6,
             "mango": 1,
@@ -58,11 +58,11 @@ warehouses = [{
     }
     }, 
     {
-        "name": "XYZ",
+        "name": "oz",
         "inventory": {}
     },
     {
-        "name": "NoFrills",
+        "name": "dm",
         "inventory": {
             "apple": 5,
             "mango": 1
