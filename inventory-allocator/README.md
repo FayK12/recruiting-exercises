@@ -1,4 +1,13 @@
+## inventory allocator solution
 
+To run the solution testcases:
+- git clone the repo to your local machine
+- in your terminal, cd into the folder with the local repo
+- cd into the src folder and enter the command ` python test.py`
+- this runs the python test runner, and you should see a successful output of
+`Ran 9 tests in 0.001s`
+
+---------------------------------------------------
 
 ## Problem
 
