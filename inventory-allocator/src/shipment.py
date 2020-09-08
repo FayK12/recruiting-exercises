@@ -17,8 +17,8 @@ def warehouse_purchase(shipment_order, warehouse_inventory, purchased, clear_shi
   return shipment_order, purchased, clear_shipment_order
 
 
-
 def optimal_shipping(shipment_order, warehouses):
+
     checkout = []
 
     if len(shipment_order) == 0:
@@ -39,12 +39,11 @@ def optimal_shipping(shipment_order, warehouses):
           for fruit in clear_shipment_order:
             del shipment_order[fruit]
 
-        if len(purchased) > 0 :
+        if len(purchased) > 0:
           warehouse_items[name] = purchased
           checkout.append(warehouse_items)
           
-      
-    if len(shipment_order) > 0 :
+    if len(shipment_order) > 0:
       checkout = []
 
     return checkout
