@@ -94,10 +94,10 @@ shipment_order_5 = {"apple": 0, "mango": 2, "potato": 1}
 expected_output_5 = [{'FreshCo': {'mango': 1, 'potato': 1}}, {'NoFrills': {'mango': 1}}]
 print("5", optimal_shipping(shipment_order_5, warehouses) == expected_output_5)
 
+shipment_order_6 = {"apple": 7, "mango": 0}
+expected_output_6 = [{'FreshCo': {'apple': 6}}, {'NoFrills': {'apple': 1}}]
+print("6", optimal_shipping(shipment_order_6, warehouses) == expected_output_6)
+
 shipment_order_7 = {"apple": 12, "mango": 1}
 expected_output_7 = []
 print("7", optimal_shipping(shipment_order_7, warehouses) == expected_output_7)
-
-shipment_order_8 = {"apple": 7, "mango": 0}
-expected_output_8 = [{'FreshCo': {'apple': 6}}, {'NoFrills': {'apple': 1}}]
-print("8", optimal_shipping(shipment_order_8, warehouses) == expected_output_8)
