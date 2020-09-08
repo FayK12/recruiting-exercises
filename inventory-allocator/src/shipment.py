@@ -13,9 +13,7 @@ def warehouse_purchase(shipment_order, warehouse_inventory, purchased, clear_shi
         purchased[fruit] = shipment_order[fruit]
         shipment_order[fruit] = 0
         clear_shipment_order.add(fruit)
-        #print("clear:", clear_shipment_order)
-  #print("purchased", purchased)
-  #print("hsipment", shipment_order)
+        
   return shipment_order, purchased, clear_shipment_order
 
 
@@ -38,10 +36,8 @@ def optimal_shipping(shipment_order, warehouses):
         shipment_order, purchased, clear_shipment_order = warehouse_purchase(shipment_order, warehouse_inventory, purchased, clear_shipment_order)
         
         if len(clear_shipment_order) > 0:
-          #print("pre", clear_shipment_order)
           for fruit in clear_shipment_order:
             del shipment_order[fruit]
-            #print("len", shipment_order)
 
         if len(purchased) > 0 :
           warehouse_items[name] = purchased
